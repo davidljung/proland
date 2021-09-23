@@ -1,3 +1,9 @@
+Proland is a C++/OpenGL library for the real-time rendering and
+animation of natural scenes.
+
+Website: http://proland.inrialpes.fr/
+
+
 PROLAND LIBRARIES
 
 This directory contains the Proland core library, several "plugins" for
