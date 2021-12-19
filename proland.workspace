@@ -62,8 +62,8 @@
 		</Project>
 		<Project filename="edit/examples/edit4/helloworld.cbp" />
 		<Project filename="atmo/examples/atmo/helloworld.cbp">
-			<Depends filename="core/proland-core.cbp" />
 			<Depends filename="atmo/proland-atmo.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
 		<Project filename="ocean/examples/ocean1/helloworld.cbp">
 			<Depends filename="atmo/proland-atmo.cbp" />
@@ -72,33 +72,32 @@
 		<Project filename="ocean/examples/ocean2/helloworld.cbp" />
 		<Project filename="forest/examples/trees1/helloworld.cbp" />
 		<Project filename="demo/proland-demo.cbp">
-			<Depends filename="core/proland-core.cbp" />
 			<Depends filename="terrain/proland-terrain.cbp" />
 			<Depends filename="edit/proland-edit.cbp" />
 			<Depends filename="atmo/proland-atmo.cbp" />
 			<Depends filename="ocean/proland-ocean.cbp" />
 			<Depends filename="forest/proland-forest.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
 		<Project filename="terrain/examples/exercise1/helloworld.cbp">
-			<Depends filename="core/proland-core.cbp" />
 			<Depends filename="terrain/proland-terrain.cbp" />
 			<Depends filename="atmo/proland-atmo.cbp" />
 			<Depends filename="ocean/proland-ocean.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
 		<Project filename="terrain/examples/exercise2/helloworld.cbp">
-			<Depends filename="core/proland-core.cbp" />
 			<Depends filename="terrain/proland-terrain.cbp" />
 			<Depends filename="edit/proland-edit.cbp" />
 			<Depends filename="forest/proland-forest.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
 		<Project filename="terrain/examples/exercise3/helloworld.cbp">
-			<Depends filename="core/proland-core.cbp" />
 			<Depends filename="terrain/proland-terrain.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
 		<Project filename="terrain/examples/exercise4/helloworld.cbp" />
 		<Project filename="terrain/examples/exercise5/helloworld.cbp" />
-		<Project filename="proland.cbp" active="1">
-			<Depends filename="core/proland-core.cbp" />
+		<Project filename="proland.cbp">
 			<Depends filename="terrain/proland-terrain.cbp" />
 			<Depends filename="graph/proland-graph.cbp" />
 			<Depends filename="river/proland-river.cbp" />
@@ -129,6 +128,8 @@
 			<Depends filename="terrain/examples/exercise3/helloworld.cbp" />
 			<Depends filename="terrain/examples/exercise4/helloworld.cbp" />
 			<Depends filename="terrain/examples/exercise5/helloworld.cbp" />
+			<Depends filename="core/proland-core.cbp" />
 		</Project>
+		<Project filename="../ork/ork.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

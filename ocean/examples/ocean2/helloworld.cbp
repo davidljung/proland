@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="..\..\..\output\examples\ocean\ocean2\ocean2d" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="examples\ocean2" />
-				<Option object_output="..\..\..\build\Debug\examples\ocean2" />
+				<Option output="../../../output/examples/ocean/ocean2/ocean2d" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="examples/ocean2" />
+				<Option object_output="../../../build/Debug/examples/ocean2" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -23,9 +23,9 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="..\..\..\output\examples\ocean\ocean2\ocean2" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="examples\ocean2" />
-				<Option object_output="..\..\..\build\Release\examples\ocean2" />
+				<Option output="../../../output/examples/ocean/ocean2/ocean2" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="examples/ocean2" />
+				<Option object_output="../../../build/Release/examples/ocean2" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -41,11 +41,11 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-march=i686" />
 			<Add option="-pedantic-errors" />
 			<Add option="-pedantic" />
 			<Add option="-Wall" />
 			<Add option="-ansi" />
+			<Add option="-fPIC" />
 			<Add option="-Wno-long-long" />
 			<Add option="-fno-strict-aliasing" />
 			<Add option="-DPROLAND_API=" />
@@ -56,25 +56,31 @@
 			<Add directory="$(#ork3.include)" />
 			<Add directory="$(#ork3.extern)" />
 			<Add directory="$(#twbar.include)" />
-			<Add directory="..\..\..\core\sources" />
-			<Add directory="..\..\..\atmo\sources" />
-			<Add directory="..\..\sources" />
+			<Add directory="../../../core/sources" />
+			<Add directory="../../../atmo/sources" />
+			<Add directory="../../sources" />
 		</Compiler>
 		<Linker>
 			<Add directory="$(#ork3.lib)" />
-			<Add directory="..\..\..\output\bin" />
+			<Add directory="../../../output/bin" />
 		</Linker>
 		<Unit filename="HelloWorld.cpp" />
-		<Unit filename="fftInitShader.glsl" />
-		<Unit filename="fftxShader.glsl" />
-		<Unit filename="fftyShader.glsl" />
+		<Unit filename="fftInitShader.glsl">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="fftxShader.glsl">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="fftyShader.glsl">
+			<Option compile="1" />
+		</Unit>
 		<Unit filename="helloworld.xml" />
-		<Unit filename="oceanFFTShader.glsl" />
-		<Unit filename="variancesShader.glsl" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Unit filename="oceanFFTShader.glsl">
+			<Option compile="1" />
+		</Unit>
+		<Unit filename="variancesShader.glsl">
+			<Option compile="1" />
+		</Unit>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>

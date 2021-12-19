@@ -7,9 +7,9 @@
 		<Option compiler="gcc" />
 		<Build>
 			<Target title="Debug">
-				<Option output="..\..\..\output\examples\core\helloworldd" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="examples\helloworld" />
-				<Option object_output="..\..\..\build\Debug\examples\helloworld" />
+				<Option output="../../../output/examples/core/helloworldd" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="examples/helloworld" />
+				<Option object_output="../../../build/Debug/examples/helloworld" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -21,9 +21,9 @@
 				</Linker>
 			</Target>
 			<Target title="Release">
-				<Option output="..\..\..\output\examples\core\helloworld" prefix_auto="1" extension_auto="1" />
-				<Option working_dir="examples\helloworld" />
-				<Option object_output="..\..\..\build\Release\examples\helloworld" />
+				<Option output="../../../output/examples/core/helloworld" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="examples/helloworld" />
+				<Option object_output="../../../build/Release/examples/helloworld" />
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
@@ -37,11 +37,11 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="-march=i686" />
 			<Add option="-pedantic-errors" />
 			<Add option="-pedantic" />
 			<Add option="-Wall" />
 			<Add option="-ansi" />
+			<Add option="-fPIC" />
 			<Add option="-Wno-long-long" />
 			<Add option="-fno-strict-aliasing" />
 			<Add option="-DPROLAND_API=" />
@@ -52,20 +52,19 @@
 			<Add directory="$(#ork3.include)" />
 			<Add directory="$(#ork3.extern)" />
 			<Add directory="$(#twbar.include)" />
-			<Add directory="..\..\sources" />
+			<Add directory="../../sources" />
 		</Compiler>
 		<Linker>
+			<Add option="$(#twbar.lib)" />
 			<Add directory="$(#ork3.lib)" />
-			<Add directory="..\..\..\output\bin" />
+			<Add directory="../../../output/bin" />
 		</Linker>
 		<Unit filename="HelloWorld.cpp" />
 		<Unit filename="helloworld.xml" />
 		<Unit filename="quad.mesh" />
-		<Unit filename="terrainShader.glsl" />
-		<Extensions>
-			<code_completion />
-			<envvars />
-			<debugger />
-		</Extensions>
+		<Unit filename="terrainShader.glsl">
+			<Option compile="1" />
+		</Unit>
+		<Extensions />
 	</Project>
 </CodeBlocks_project_file>
