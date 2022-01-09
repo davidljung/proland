@@ -25,6 +25,8 @@
 					<Add library="proland-ocean-4_0d" />
 					<Add library="proland-forest-4_0d" />
 					<Add library="tiff" />
+					<Add library="proland-graph-4_0d" />
+					<Add library="proland-river-4_0d" />
 					<Add directory="$(#tiff.lib)" />
 					<Add directory="../output/bin" />
 				</Linker>
@@ -49,6 +51,8 @@
 					<Add library="proland-ocean-4_0" />
 					<Add library="proland-forest-4_0" />
 					<Add library="tiff" />
+					<Add library="proland-graph-4_0" />
+					<Add library="proland-river-4_0" />
 					<Add directory="$(#tiff.lib)" />
 					<Add directory="../output/bin" />
 				</Linker>

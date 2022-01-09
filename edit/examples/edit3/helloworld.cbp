@@ -21,6 +21,7 @@
 					<Add library="proland-terrain-4_0d" />
 					<Add library="proland-graph-4_0d" />
 					<Add library="proland-edit-4_0d" />
+					<Add library="proland-river-4_0d" />
 				</Linker>
 			</Target>
 			<Target title="Release">
@@ -39,6 +40,7 @@
 					<Add library="proland-terrain-4_0" />
 					<Add library="proland-graph-4_0" />
 					<Add library="proland-edit-4_0" />
+					<Add library="proland-river-4_0" />
 				</Linker>
 			</Target>
 		</Build>
