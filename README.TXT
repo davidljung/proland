@@ -14,3 +14,10 @@ has its own licence, source tree, examples, documentation and project
 files. The directories are mostly independent, except for some 
 dependencies between plugins (and between all the plugins and the core
 library).
+
+From the website:
+License
+
+Proland is now distributed under the BSD 3 free software license, for non-commercial as well as commercial use.
+
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the BSD3 License for more details.
