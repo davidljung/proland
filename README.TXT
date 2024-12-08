@@ -3,6 +3,8 @@ animation of natural scenes.
 
 Website: http://proland.inrialpes.fr/
 
+Imported from INRIA's Gitlab repo here: https://gitlab.inria.fr/neyret/proland
+(on 2024-12-08)
 
 PROLAND LIBRARIES
 
